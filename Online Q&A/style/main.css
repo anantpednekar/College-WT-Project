@@ -1,0 +1,212 @@
+html
+{ height: 100%;
+}
+
+*
+{ margin: 0;
+  padding: 0;
+  }
+body
+{ font: normal .80em 'trebuchet ms', arial, sans-serif;
+  background: #FFF;
+  color: #555;
+  }
+  
+img
+{ border: 0;
+  }
+  
+a, a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #AEB002;
+  }
+
+
+ul
+{ margin: 2px 0 22px 17px;
+  }
+
+ul li
+{ list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+  }
+ 
+
+#logo
+{ width: 880px;
+  position: relative;
+  height: 94px;
+  background: transparent;
+}
+
+ #logo_text 
+{ position: absolute; 
+  top: 10px;
+  left: 0;
+ }
+#logo_text h1
+{ padding: 22px 0 0 0;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+
+#menubar
+{ width: 880px;
+  height: 46px;
+} 
+
+ul#menu
+{ float: right;
+  margin: 0;
+}
+
+ul#menu li
+{ float: left;
+  padding: 0 0 0 9px;
+  list-style: none;
+  margin: 1px 2px 0 0;
+  background: #5A5A5A url(tab.png) no-repeat 0 0;
+}
+
+ul#menu li a
+{ font: normal 100% 'trebuchet ms', sans-serif;
+  display: block; 
+  float: left; 
+  height: 20px;
+  padding: 6px 35px 5px 28px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  background: #5A5A5A url(tab.png) no-repeat 100% 0;
+} 
+
+
+
+ul#menu li.selected
+{ margin: 1px 2px 0 0;
+  background: #00C6F0 url(tab_selected.png) no-repeat 0 0;
+}
+
+ul#menu li.selected a, ul#menu li.selected a:hover
+{ background: #00C6F0 url(tab_selected.png) no-repeat 100% 0;
+  color: #FFF;
+}
+
+ul#menu li a:hover
+{ color: #E4EC04;
+}
+
+
+
+
+
+#site_content
+{ width: 880px;
+  height: 420px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 10px 0 10px 0;
+}
+
+
+#sidebar_container
+{   float: right;
+    height: 400px;
+    width: 224px;
+    /* top right bottom left*/
+    padding: 10px 5px 10px 5px;
+    background-color: #555;
+}
+#login{
+    height: 320px;
+    width: 460px;
+    padding: 40px 80px 40px 80px;
+    
+    background-color: #555;
+}
+
+#login_form{
+    width: 300px;
+    height: 320px;
+    margin: 0px 80px 0px 80px;
+    background-color: dimgrey;
+}
+
+#login_table{
+    width: 272px;
+    height: 320px;
+    margin-left: 28px;
+    margin-right: 28px;
+    padding-top: 20px;padding-bottom: 20px;
+}
+
+#AdminTable{
+	width: 100%;
+	height: auto;
+	background-color: white;
+	
+}
+
+input.ip{
+	width: 90%;
+	height: 28px;
+}
+
+#content
+{ text-align: left;
+  width: 620px;
+  height: 400px;
+  padding: 10px 10px 10px 10px;
+  float: left;
+    background-color: #555;
+}
+  
+
+
+
+ 
+
+#main, #logo, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;
+}
+
+#header
+{ background: #323534 url(back.png) repeat-x;
+  background-position:bottom;
+  height: 131px;
+}
+
+
+
+#footer
+{ width: 100%;
+  font-family: 'trebuchet ms', sans-serif;
+  font-size: 100%;
+  height: 80px;
+  padding: 28px 0 5px 0;
+  text-align: center; 
+  background: #3B3939 url(footer.png) repeat-x;
+  color: #A8AA94;
+  }
+
+#footer p
+{ line-height: 1.7em;
+  padding: 0 0 10px 0;
+}
+
+#footer a
+{ color: #A8AA94;
+  text-decoration: none;
+}
+
+#footer a:hover
+{ color: #FFF;
+  text-decoration: none;
+}
+

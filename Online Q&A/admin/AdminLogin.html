@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<script>
+    function submitForm(){
+        var x = document.forms["login_form"]["username"].value;
+        if (x == "") {
+            alert(" Name cannot be Empty ");
+            document.getElementsByName("username").focus();
+            return false;
+        }
+        
+        var passw=  /^[A-Za-z0-9]\w{7,14}$/;
+        x = document.forms["login_form"]["userpassword"].value;
+        if (x == "") {
+            alert(" Password cannot be Empty ");
+            document.getElementsByName("userpassword").focus();
+            return false;
+        }
+        if (!x.match(passw)) {
+            alert(" Password must be between 7 to 16 characters or numbers ");
+            document.getElementsByName("userpassword").focus();
+            return false;
+        }
+        return true;
+    }
+    
+</script>
+
+<html>
+	<head>
+		<title>Online Examination</title>
+		<link href="../style/main.css" rel="stylesheet">
+	</head>
+    
+	<body>
+		<div id="main">
+		
+			<div id="header">
+				<div id="logo">
+					<div id="logo_text">
+					  <h1>Online Examination</h1>
+					</div>
+				</div>
+			</div>
+			
+			<div id="content_header">
+			</div>
+			
+			<div id="site_content">
+               
+                <div id="sidebar_container" ></div>
+                <div id="content" >
+                    <div id="login" >
+                        <form id="login_form" action="LoginTest.php" onsubmit="return submitForm()" method="post">
+                            <table id="login_table" >
+                                <tr> 
+                                    <td><h2 id="form_title" style="padding: 8px 0 0 0;color: #FFF;letter-spacing:0.1em;">LOGIN HERE</h2></td> 
+                                </tr>
+                                <tr> 
+                                    <td><input class="ip" type="text" name="username" placeholder="Username"></td> 
+                                </tr>
+                                <tr>
+                                    <td><input class="ip" type="password" name="userpassword" placeholder="Password"></td>  
+                                </tr>
+                                <tr>
+                                    <td><input type="submit" value="Login"></td>
+                                </tr>
+                            </table>
+						</form>
+                    </div>
+                </div>
+                
+			</div>
+			
+			<div id="content_footer">
+			</div>
+			
+			<div id="footer">
+				<p>
+					Online Examination System by 16co63 @AP
+				</p>
+			</div>
+		</div>
+	</body>  
+<html>
